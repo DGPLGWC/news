@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>SmileCommUNITY</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="SmileCommUNITY - Feminisim">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-    <link href="../static/image/favicon.ico" rel="icon" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <div class="images">
-        <img src="../static/image/smilecommunity.jpg" style="padding-right: 20px; border-radius: 7px;" />
+
+<head>
+  <title>SmileCommUNITY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="SmileCommUNITY - Feminisim">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <link href="../static/image/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <div class="images">
+        <a href="{{url_for('index') }}"> <img src="../static/image/smilecommunity.jpg" style="padding-right: 20px; border-radius: 7px;" /></a>
         <p>Welcome to Smile CommUNITY</p>
-      </div>      
-    </header>
-    
-    <div id='main'>
-      <article>
-          <h1>Topic of the day: {{ topic }}</h1>
-          <blockquote class="embedly-card">
-            <h4>
-              <a href="http://www.nationalgeographic.com/magazine/2017/02/global-images-of-widows-india-bosnia-uganda-discrimination-exile/">For Widows, Life After Loss</a>
-            </h4>
-            <p>This story appears in the February 2017 issue ofNational Geographic magazine. The Pulitzer Center on Crisis Reporting provided a grant to support this story. View its relatedlesson plan here. 1. RETURNING TO LIFE, Vrindavan, India Long before sunrise the widows of Vrindavan hurried along dark, unpaved alleys, trying to sidestep mud puddles and fresh cow dung.</p>
-          </blockquote>
-          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-          <div>
+    </div>
+  </header>
+
+  <div id='main'>
+    <article>
+      <h1>Topic of the day: {{ topic }}</h1>
+      <blockquote class="embedly-card">
+        <h4>
+          <a href="http://www.nationalgeographic.com/magazine/2017/02/global-images-of-widows-india-bosnia-uganda-discrimination-exile/">For Widows, Life After Loss</a>
+        </h4>
+        <p>This story appears in the February 2017 issue ofNational Geographic magazine. The Pulitzer Center on Crisis Reporting
+          provided a grant to support this story. View its relatedlesson plan here. 1. RETURNING TO LIFE, Vrindavan, India
+          Long before sunrise the widows of Vrindavan hurried along dark, unpaved alleys, trying to sidestep mud puddles
+          and fresh cow dung.</p>
+      </blockquote>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+      <blockquote class="embedly-card">
+        <h4><a href="http://news.nationalgeographic.com/2016/04/160411-national-womans-party-house-museum-park-service-monument/">New U.S. National Monument Is First To Honor Women's Equality</a></h4>
+        <p>A house and museum that was home to one of the nation's leading women's rights organizations will be the United States'
+          first national monument to women's history. On Tuesday, the Obama administration will designate the Sewall-Belmont
+          House & Museum in Washington, D.C., as the Belmont-Paul Women's Equality National Monument, underlining the National
+          Park Service's desire to acquire more sites that highlight women's achievements.</p>
+      </blockquote>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+      <blockquote class="embedly-card">
+        <h4><a href="http://yourshot.nationalgeographic.com/photos/9647207/">Women's March on Washington Photo by Rita Thompson - National Geographic Your Shot</a></h4>
+        <p>Rita Thompson posted this picture to National Geographic's Your Shot photo community. Check it out, add a comment,
+          share it, and more.</p>
+      </blockquote>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+      <blockquote class="embedly-card">
+        <h4><a href="http://yourshot.natioßnalgeographic.com/photos/9620780/">This is What A Feminist Looks Like Photo by Alicia Dhyana House - National Geographic Your Shot</a></h4>
+        <p>Alicia Dhyana House posted this picture to National Geographic's Your Shot photo community. Check it out, add a comment,
+          share it, and more.</p>
+      </blockquote>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+      <div>
         <div class="button-area-line">
           <a href="{{ url_for('environment') }}">Environment
                 <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
               </a>
           <a href="{{ url_for('equality') }}">Equality
-                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+                <img src="http://voices.nationalgeographic.com/files/2014/03/1-Women-Ranger-Head-of-Rangers_BANPhi-res-JPG-reduced-600x386.jpg" width="150" height="150"/>
               </a>
           <a href="{{ url_for('education') }}">Education
-                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+                <img src="" width="150" height="150"/>
               </a>
           <a href="{{ url_for('feminism') }}">Feminism
-                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+                <img src="http://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2017/02/Widows/Widows_22.adapt.1900.1.JPG" width="150" height="150"/>
               </a>
           <a href="{{ url_for('science') }}">Science
-                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+                <img src="http://news.nationalgeographic.com/content/dam/news/2017/05/25/jupiter-nasa-mission/jupiter-nasa-mission-juno-04.ngsversion.1495737022263.adapt.536.1.jpg" width="150" height="150"/>
               </a>
         </div>
-         </div>
-      </article>
- 
-    </div>
-    <footer><p>&copy; Your group name GWC 2017</p></footer>
-  </body>
+      </div>
+    </article>
+
+  </div>
+  <footer>
+    <p>&copy; Your group name GWC 2017</p>
+  </footer>
+</body>
+
 </html>

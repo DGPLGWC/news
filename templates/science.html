@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>SmileCommUNITY</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="SmileCommUNITY - Science">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-    <link href="../static/image/favicon.ico" rel="icon" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <div class="images">
-        <img src="../static/image/smilecommunity.jpg" style="padding-right: 20px; border-radius: 7px;" />
+
+<head>
+  <title>SmileCommUNITY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="SmileCommUNITY - Science">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <link href="../static/image/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <div class="images">
+        <a href="{{url_for('index') }}"> <img src="../static/image/smilecommunity.jpg" style="padding-right: 20px; border-radius: 7px;" /></a>
         <p>Welcome to Smile CommUNITY</p>
-      </div>      
-    </header>
-    
-    <div id='main'>
-      <article>
-          <h1>Topic of the day: {{ topic }}</h1>
-          <div>
+    </div>
+  </header>
+
+  <div id='main'>
+    <article>
+      <h1>Topic of the day: {{ topic }}</h1>
+      <div>
+        <blockquote class="embedly-card">
+          <h4><a href="http://news.nationalgeographic.com/2017/05/nasa-jupiter-pictures-juno-planets-space-science/">Surreal Pictures Show Jupiter Is Even Weirder Than We Thought</a></h4>
+          <p>The solar system's biggest planet just keeps getting more spectacular -and more confoundingly mysterious. While
+            we've known for centuries that Jupiter is snazzily decorated with colorful, cloudy bands and stormy splotches,
+            the images coming back from NASA's Juno spacecraft, which has been orbiting Jupiter since last July, reveal filigreed
+            clouds unlike anything else in the solar system.</p>
+        </blockquote>
+        <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
         <div class="button-area-line">
           <a href="{{ url_for('environment') }}">Environment
                 <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
               </a>
           <a href="{{ url_for('equality') }}">Equality
-                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+                <img src="http://voices.nationalgeographic.com/files/2014/03/1-Women-Ranger-Head-of-Rangers_BANPhi-res-JPG-reduced-600x386.jpg" width="150" height="150"/>
               </a>
           <a href="{{ url_for('education') }}">Education
-                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+                <img src="" width="150" height="150"/>
               </a>
           <a href="{{ url_for('feminism') }}">Feminism
-                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+                <img src="http://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2017/02/Widows/Widows_22.adapt.1900.1.JPG" width="150" height="150"/>
               </a>
           <a href="{{ url_for('science') }}">Science
-                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+                <img src="http://news.nationalgeographic.com/content/dam/news/2017/05/25/jupiter-nasa-mission/jupiter-nasa-mission-juno-04.ngsversion.1495737022263.adapt.536.1.jpg" width="150" height="150"/>
               </a>
         </div>
-          </div>
-      </article>
-    </div>
-    <footer><p>&copy; Your group name GWC 2017</p></footer>
-  </body>
+      </div>
+    </article>
+  </div>
+  <footer>
+    <p>&copy; Your group name GWC 2017</p>
+  </footer>
+</body>
+
 </html>
