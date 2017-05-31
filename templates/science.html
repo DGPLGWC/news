@@ -4,7 +4,7 @@
     <title>SmileCommUNITY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="SmileCommUNITY">
+    <meta name="description" content="SmileCommUNITY - Science">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <link href="../static/image/favicon.ico" rel="icon" type="image/x-icon" />
@@ -12,7 +12,7 @@
   <body>
     <header>
       <div class="images">
-        <img src="../static/image/smilecommunity.jpg" style="margin: auto;" />
+        <img src="../static/image/smilecommunity.jpg" style="padding-right: 20px; border-radius: 7px;" />
         <p>Welcome to Smile CommUNITY</p>
       </div>      
     </header>
@@ -21,13 +21,23 @@
       <article>
           <h1>Topic of the day: {{ topic }}</h1>
           <div>
-            <div class="button-area-line">
-              <a href=" {{ url_for('environment') }}">Environment</a>
-              <a href="{{ url_for('equality') }}">Equality</a>
-              <a href="{{ url_for('education') }}">Education</a>
-              <a href="{{ url_for('feminism') }}">Feminism</a>
-              <a href="{{ url_for('science') }}">Science</a>
-            </div>
+        <div class="button-area-line">
+          <a href="{{ url_for('environment') }}">Environment
+                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+              </a>
+          <a href="{{ url_for('equality') }}">Equality
+                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+              </a>
+          <a href="{{ url_for('education') }}">Education
+                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+              </a>
+          <a href="{{ url_for('feminism') }}">Feminism
+                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+              </a>
+          <a href="{{ url_for('science') }}">Science
+                <img src="http://news.nationalgeographic.com/content/dam/news/2016/03/03/slashburn/06slashburn.adapt.590.1.jpg" width="150" height="150"/>
+              </a>
+        </div>
           </div>
       </article>
     </div>
